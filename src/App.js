@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css';
 import { Home } from './pages/Home';
 import { Menu } from './pages/Menu';
 import { Contact } from './pages/Contact';
+import { Navbar } from './pages/Navbar.js';
 
 function App() {
   return (
@@ -10,11 +11,7 @@ function App() {
 
       <Router>
 
-        <div>
-          <Link to={'/'}>Home</Link>
-          <Link to={'/menu'}>Menu</Link>
-          <Link to={'/contact'}>Contact</Link>
-        </div>
+        <Navbar />
 
 
         <Routes>
