@@ -1,9 +1,7 @@
-export const Home = () => {
-
-    return (
-        <div>
-            <h1>This is the Home Page</h1>
-        </div>
-    )
-
-}
+export const Home = (props) => {
+  return (
+    <div>
+      <h1>This is the Home Page and the user is : {props.username} </h1>
+    </div>
+  );
+};
